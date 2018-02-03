@@ -1,0 +1,10 @@
+body {
+    background-color: chartreuse; 
+    border: 5px dotted green; 
+
+}
+
+header {
+    color: rgb(28, 65, 28);
+    font-family: cursive;
+}

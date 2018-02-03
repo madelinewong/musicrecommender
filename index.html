@@ -1,17 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>MusicRecommender</title>
-    <link rel= "stylesheet" href= "styles.css"/>
-</head>
-<body>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>MusicRecommender</title>
+            <link rel= "stylesheet" href= "styles.css"/>
+        </head>
+        <body>
+            <header><h1>Click the bubbles for a Hidden Surprise™</h1></header>
+                <div>
+                        <iframe width="300" height="50" frameBorder="0" src="http://www.moviesoundclips.net/embed.php?id=5da2b694711eaa526329478d19a61283" style="overflow-y: hidden;border:0px;" scrolling="no" seamless="seamless"></iframe> 
+                </div>
         <p>
-                <img alt="" src="" 
+                <img alt="pop.jpg" src="pop.jpg" 
                     style="height: 85px; width: 198px" id="imgClickAndChange" onclick="changeImage()"  />
         </p>
- <script src="app.js"></script>
-</body>
+        <script language="javascript">
+            function changeImage() {
+        
+                if (document.getElementById("imgClickAndChange").src == "pop.jpg") 
+                {
+                    document.getElementById("imgClickAndChange").src = "pop.jpg";
+                }
+                else 
+                {
+                    document.getElementById("imgClickAndChange").src = "ed.jpg";
+                }
+            }
+        </script>
+                <p>
+                    <img alt="queengaga.jpg" src="queengaga.jpg" 
+                        style="height: 85px; width: 198px" id="imgClickAndChange" onclick="changeImage()"
+            </p>
+  <script language="javascript">
+      function changeImage() {
+  
+          if (document.getElementById("imgClickAndChange").src == "ed.jpg") 
+          {
+              document.getElementById("imgClickAndChange").src = "ed.jpg";
+          }
+          else 
+          {
+              document.getElementById("imgClickAndChange").src = "shrek.jpg";
+          }
+      }
+  </script>
+    <script src="app.js"></script>
+    </body>
 </html>
